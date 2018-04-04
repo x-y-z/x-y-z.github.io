@@ -68,7 +68,7 @@ algolia:
   powered_by             : # true (default), false
 
 # SEO Related
-google_site_verification :
+google_site_verification : "QQd4BL_BJqD2V0I6Q8Rp77X2KQJXOKbqNPlBoyoMTXU"
 bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
@@ -90,15 +90,15 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : ['custom', 'google'] # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-115464894-1"
 
 
 # Site Author
 author:
   name             : "Zi Yan"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "PhD student in Rutgers University"
   location         : "Jersey City, NJ"
   email            :
