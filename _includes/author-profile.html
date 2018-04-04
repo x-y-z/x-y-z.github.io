@@ -257,6 +257,16 @@
         </li>
       {% endif %}
 
+      {% if author.openhub %}
+        <li><a href="https://www.openhub.net/accounts/{{ author.openhub}}"><i class="fab fa-fw fa-linux" aria-hidden="true"></i> OpenHub</a></li>
+      {% endif %}
+      {% if author.googlescholar %}
+        <li><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar-square ai-fw"></i> Google Scholar</a></li>
+      {% endif %}
+      {% if author.orcid %}
+        <li><a href="{{ author.orcid }}"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
+      {% endif %}
+
       {% include author-profile-custom-links.html %}
     </ul>
   </div>
