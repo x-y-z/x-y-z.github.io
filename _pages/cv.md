@@ -31,6 +31,7 @@ Work experience
 * *Research Assistant*, **Rutgers University**, New Brunswick, NJ --- *2012 - present*
   * Developing memory defragmentation for Linux to support TLB coalescing
 	feature in modern processors (e.g. AMD Ryzen)
+  * Upstreamed transparent hugepage migration support into Linux kernel v4.14
   * Proposed a hardware TLB coherence protocol to eliminate translation
 	coherence overhead, which is a big bottleneck in heterogenous memory systems
 
@@ -40,7 +41,7 @@ Work experience
   * TLB translation coverage is increased by more than 3x
 
 * *Research Intern*, **NVIDIA Research**, Austin, TX --- *May 2016 - Sep. 2016*
-  *   * Implmented transparent hugepage (THP) migration in latest Linux kernel
+  * Implmented transparent hugepage (THP) migration in latest Linux kernel
   * Improved Linux page migration throughput by up to 5x
   * Kernel patches under submission: [__*THP migration*__](https://lwn.net/Articles/723764/) & [__*Accelerating page migration*__](https://lkml.org/lkml/2016/11/22/457)
 
