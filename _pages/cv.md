@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: ""
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -8,6 +8,10 @@ redirect_from:
 ---
 
 {% include base_path %}
+
+Research Interests
+=====
+My research interests lie at the hardware/software interface. I am interested in building programmable, high-performance, and energy-efficient systems for scale; i.e., cloud and datacenter environments. To that end, my prior research projects have focused on designing heterogeneous systems and developing operating system abstractions and mechanisms for seamless integration of accelerators (e.g. GPUs, FPGAs) in such systems. A key component of my work has been to modify the memory management core of the Linux kernel, where my code has been vetted by Linux developers and upstreamed into the mainline kernel releases since the 4.14 series.
 
 Education
 ======
@@ -29,27 +33,33 @@ Publications
 Work experience
 ======
 * *Research Assistant*, **Rutgers University**, New Brunswick, NJ --- *2012 - present*
-  * Developing memory defragmentation for Linux to support TLB coalescing
-	feature in modern processors (e.g. AMD Ryzen)
-  * Upstreamed transparent hugepage migration support into Linux kernel v4.14
-  * Proposed a hardware TLB coherence protocol to eliminate translation
-	coherence overhead, which is a big bottleneck in heterogenous memory systems
+  * Integrated 1GB transparent hugepage support into Linux for minimizing address
+	translation overhead of HPC workloads.
+  * Developed memory defragmentation technique for Linux to support TLB coalescing
+	in modern processors (e.g. AMD Ryzen) and minimize address translation overhead
+	for accelerators.
+  * Upstreamed transparent hugepage migration support to Linux kernel v4.14 for
+	high performance heterogeneous memory management.
+  * Designed a low-overhead and efficient TLB coherence protocol (HATRIC) to
+	enable high performance data migration for heterogeneous memory management
+	in virtualized environment
 
 * *Research Intern*, **NVIDIA Research**, Austin, TX --- *Jan. 2017 - May 2017*
-  * Implmented memory defragmentation in latest Linux kernel to maximize
-	translation contiguity for TLB coalescing.
-  * TLB translation coverage is increased by more than 3x
+  * Studied performance implication of CPU-GPU heterogeneous systems with
+	OS-managed GPU memory.
+  * Implemented memory defragmentation in Linux to increase more than 10x
+	address translation coverage.
 
 * *Research Intern*, **NVIDIA Research**, Austin, TX --- *May 2016 - Sep. 2016*
-  * Implmented transparent hugepage (THP) migration in latest Linux kernel
-  * Improved Linux page migration throughput by up to 5x
-  * Kernel patches under submission: [__*THP migration*__](https://lwn.net/Articles/723764/) & [__*Accelerating page migration*__](https://lkml.org/lkml/2016/11/22/457)
+  * Integrated transparent hugepage migration into Linux for high performance
+	CPU-GPU heterogeneous systems.
+  * Improved page migration throughput by more than 5x for high performance
+	heterogeneous memory management.
+  * Kernel patches: [THP migration](https://lwn.net/Articles/723764/) & [Accelerating page migration](https://lkml.org/lkml/2016/11/22/457)
 
 * *Intern*, **VMware**, Palo Alto, CA --- *Jun. 2015 - Aug. 2015*
-  * Performance analysis of Project Bonneville, the foundational technology for
-	vSphere Integrated Containers
-  * Implemented the initial version of the runtime layer, which enables memory
-	snapshot of containers in Project Bonneville
+  * Carried out performance analysis of [Project Bonneville](https://blogs.vmware.com/cloudnative/2015/06/22/introducing-project-bonneville/), the prototype of [vSphere Integrated Containers](https://www.vmware.com/products/vsphere/integrated-containers.html).
+  * Implemented the memory snapshot function of containers in [Project Bonneville](https://blogs.vmware.com/cloudnative/2015/06/22/introducing-project-bonneville/).
   
 Skills
 ======
