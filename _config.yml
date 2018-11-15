@@ -101,7 +101,7 @@ author:
   avatar           : "/images/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "PhD student in Rutgers University"
   location         : "Jersey City, NJ"
-  email            : "zi.yan@cs.rutgers.edu"
+  email            : "zi.yan@normal.zone"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   googlescholar    : "https://scholar.google.com/citations?user=aT8UcQgAAAAJ"
