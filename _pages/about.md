@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 I am a PhD student in Department of Computer Science, Rutgers University. My advisor is
-[Abhishek Bhattacharjee](https://www.cs.rutgers.edu/~abhib/).
+[Abhishek Bhattacharjee](http://www.cs.yale.edu/homes/abhishek/).
 
 # Research
 
