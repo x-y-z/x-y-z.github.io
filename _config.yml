@@ -100,7 +100,7 @@ author:
   name             : "Zi Yan"
   avatar           : "/images/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "PhD student in Rutgers University"
-  location         : "Jersey City, NJ"
+  location         :
   email            : "zi.yan@normal.zone"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
@@ -261,27 +261,30 @@ collections:
     publications:
         output: true
         permalink: /:collection/:path/
+    blog:
+        output: true
+        permalink: /:collection/:path/
 
 # Defaults
 defaults:
   # _posts
   - scope:
-      path: ""
-      type: posts
+      path: "_blog"
+      type: blog
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: # true
+      read_time: # true
+      comments: true
       share: true
       related: true
   - scope:
-      path: ""
+      path: "_publications"
       type: publications
     values:
       layout: single
       author_profile: true
       read_time: false
       comments: # true
-      share: true
-      related: true
+      share:  true
+      related: # true

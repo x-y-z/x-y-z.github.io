@@ -15,7 +15,7 @@ My research interests lie at the hardware/software interface. I am interested in
 
 Education
 ======
-* **Rutgers University** --- *2012 - 2018 (expected)*
+* **Rutgers University** --- *2012 - 2019*
   * Ph.D in Computer Science
 * **University of Pennsylvania** ---  *2011 - 2012*
   * Master in Computer Information & Science
@@ -32,7 +32,7 @@ Publications
 
 Work experience
 ======
-* *Research Assistant*, **Rutgers University**, New Brunswick, NJ --- *2012 - present*
+* *Research Assistant*, **Rutgers University**, New Brunswick, NJ --- *2012 - 2018*
   * Integrated 1GB transparent hugepage support into Linux for minimizing address
 	translation overhead of HPC workloads.
   * Developed memory defragmentation technique for Linux to support TLB coalescing
