@@ -3,11 +3,11 @@ permalink: /
 title: "About Me"
 excerpt: ""
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
-I am a PhD student in Department of Computer Science, Rutgers University. My advisor is
+I received my PhD in computer science from Rutgers University. My advisor is
 [Abhishek Bhattacharjee](http://www.cs.yale.edu/homes/abhishek/).
 
 # Research

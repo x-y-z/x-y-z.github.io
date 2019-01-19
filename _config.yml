@@ -99,7 +99,7 @@ analytics:
 author:
   name             : "Zi Yan"
   avatar           : "/images/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "PhD student in Rutgers University"
+  bio              : ""
   location         :
   email            : "zi.yan@normal.zone"
   uri              :
