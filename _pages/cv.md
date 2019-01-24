@@ -32,6 +32,8 @@ Publications
 
 Work experience
 ======
+* *Software Engineer*, **NVIDIA Research** --- *2019 - present*
+
 * *Research Assistant*, **Rutgers University**, New Brunswick, NJ --- *2012 - 2018*
   * Integrated 1GB transparent hugepage support into Linux for minimizing address
 	translation overhead of HPC workloads.
@@ -60,7 +62,7 @@ Work experience
 * *Intern*, **VMware**, Palo Alto, CA --- *Jun. 2015 - Aug. 2015*
   * Carried out performance analysis of [Project Bonneville](https://blogs.vmware.com/cloudnative/2015/06/22/introducing-project-bonneville/), the prototype of [vSphere Integrated Containers](https://www.vmware.com/products/vsphere/integrated-containers.html).
   * Implemented the memory snapshot function of containers in [Project Bonneville](https://blogs.vmware.com/cloudnative/2015/06/22/introducing-project-bonneville/).
-  
+
 Skills
 ======
 * Programming Languages & Tools

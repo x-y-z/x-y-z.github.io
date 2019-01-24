@@ -99,7 +99,7 @@ analytics:
 author:
   name             : "Zi Yan"
   avatar           : "/images/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : ""
+  bio              : "Software Engineer at NVIDIA Research"
   location         :
   email            : "zi.yan@normal.zone"
   uri              :
