@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am a software engineer at [NVIDIA Reseach](https://research.nvidia.com). I received my PhD in computer science from Rutgers University. My advisor is
+I am a software engineer at [NVIDIA Research](https://research.nvidia.com). I received my PhD in computer science from Rutgers University. My advisor is
 [Abhishek Bhattacharjee](http://www.cs.yale.edu/homes/abhishek/).
 
 # Research
