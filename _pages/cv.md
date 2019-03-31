@@ -7,8 +7,6 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
-
 Research Interests
 =====
 My research interests lie at the hardware/software interface. I am interested in building programmable, high-performance, and energy-efficient systems for scale; i.e., cloud and datacenter environments. To that end, my prior research projects have focused on designing heterogeneous systems and developing operating system abstractions and mechanisms for seamless integration of accelerators (e.g. GPUs, FPGAs) in such systems. A key component of my work has been to modify the memory management core of the Linux kernel, where my code has been vetted by Linux developers and upstreamed into the mainline kernel releases since the 4.14 series.

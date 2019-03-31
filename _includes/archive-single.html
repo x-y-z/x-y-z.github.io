@@ -11,7 +11,7 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -35,6 +35,6 @@
     {% endif %}
 	{% if post.authors %}<p class="archive__item-excerpt" itemprop="description">{{ post.authors | replace: "Zi Yan", "**Zi Yan**" | markdownify | remove: '<p>' |remove:'</p>'}}</p>{% endif %}
 	{% if post.venue %}<p class="archive__item-excerpt" itemprop="description">{{ post.venue | markdownify | remove: '<p>' |remove:'</p>'}}</p>{% endif %}
-  {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | remove: '<p>' |remove:'</p>'| truncate: 160 }}</p>{% endif %}
+    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
 </div>
