@@ -1,11 +1,11 @@
 ---
 title: "Nimble Page Management for Tiered Memory Systems"
 collection: blog
-date: 2019-01-27
+date: 2019-04-20
 
 ---
 
-- The kernel of "Nimble Page Management for Tiered Memory Systems" is [here](https://github.com/ysarch-lab/nimble_page_management_asplos_2019). 
+- The kernel of "Nimble Page Management for Tiered Memory Systems" is [here](https://github.com/ysarch-lab/nimble_page_management_asplos_2019).
 - Its companion userspace applications and microbenchmarks can be find [here](https://github.com/ysarch-lab/nimble_page_management_userspace).
 
 ## Kernel compilation
@@ -45,7 +45,7 @@ My machine has two NUMA nodes (0-1), each has 32GB memory.
 4. In **thp_page_migration_and_parallel** subfolder, there are four shell scripts migrating pages between NUMA node 0 and NUMA node 1.
 
    1. run_non_thp_test.sh: it migrates 2<sup>0</sup> to 2<sup>9</sup> 4KB pages between node 0 and node 1.
-   2. run_non_thp_2mb_page_test.sh: it migrates 2<sup>0</sup> to 2<sup>9</sup> 512 4KB pages (each set of 512 4KB pages are equivalent to 1 2MB page size) between node 0 and node 1. 
+   2. run_non_thp_2mb_page_test.sh: it migrates 2<sup>0</sup> to 2<sup>9</sup> 512 4KB pages (each set of 512 4KB pages are equivalent to 1 2MB page size) between node 0 and node 1.
    3. run_split_thp_test.sh: it migrates 2<sup>0</sup> to 2<sup>9</sup> 2MB THPs between node 0 and node 1 but each THP will be split before migration.
    4. run_thp_test.sh: it migrates 2<sup>0</sup> to 2<sup>9</sup> 2MB THPs natively between node 0 and node 1.
 
@@ -94,9 +94,9 @@ With these numbers, you should be able to get detail breakdown of Linux page mig
 
 ## User application launcher
 
-To launch benchmarks for end-to-end results, you will need the scripts and the launcher from **end_to_end_launcher** folder. Also you need to enable cgroup v2 support by adding `systemd.unified_cgroup_hierarchy=1` to your kernel boot parameters. What I did is adding `systemd.unified_cgroup_hierarchy=1` to `GRUB_CMDLINE_LINUX` in `/etc/default/grub` file, like `GRUB_CMDLINE_LINUX="systemd.unified_cgroup_hierarchy=1"` and run `sudo update_grub2`. 
+To launch benchmarks for end-to-end results, you will need the scripts and the launcher from **end_to_end_launcher** folder. Also you need to enable cgroup v2 support by adding `systemd.unified_cgroup_hierarchy=1` to your kernel boot parameters. What I did is adding `systemd.unified_cgroup_hierarchy=1` to `GRUB_CMDLINE_LINUX` in `/etc/default/grub` file, like `GRUB_CMDLINE_LINUX="systemd.unified_cgroup_hierarchy=1"` and run `sudo update_grub2`.
 
-In **end_to_end_launcher** folder, run `make` to create launcher binary from *launch.c* file. 
+In **end_to_end_launcher** folder, run `make` to create launcher binary from *launch.c* file.
 
 1. create_die_stack_mem.sh can help you create a cgroup limiting your fast memory size.
 2. run_bench.sh use launcher to run your applications in cgroup created by create_die_stack_mem.sh. You should change `PROJECT_LOC` to point to the folder of launcher binary.
