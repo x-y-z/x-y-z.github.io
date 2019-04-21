@@ -1,5 +1,5 @@
 ---
-title: "Nimble Page Management for Tiered Memory Systems"
+title: "Tutorial: Nimble Page Management for Tiered Memory Systems"
 collection: blog
 date: 2019-04-20
 
