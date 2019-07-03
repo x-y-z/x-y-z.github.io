@@ -99,8 +99,8 @@ To launch benchmarks for end-to-end results, you will need the scripts and the l
 In **end_to_end_launcher** folder, run `make` to create launcher binary from *launch.c* file.
 
 1. create_die_stack_mem.sh can help you create a cgroup limiting your fast memory size.
-2. run_bench.sh use launcher to run your applications in cgroup created by create_die_stack_mem.sh. You should change `PROJECT_LOC` to point to the folder of launcher binary.
-3. Each of your applications should be in separate folder like graph500-omp from the GitHub repository. You also need to create a `bench_run.sh` file to tell `run_bench.sh` the name of your application (`BENCH_NAME`) and how to run it (`BENCH_RUN`). **Note**: you should adjust your benchmark size, so that it can fit in your slow memory. For example, in this tutorial, it is better to use 30GB as your benchmark footprint, considering kernel might use some memory in each 32GB memory node.
+2. run_bench.sh uses launcher to run your applications in cgroup created by create_die_stack_mem.sh. You should change `PROJECT_LOC` to point to the folder of launcher binary.
+3. Each of your applications should be in a separate folder like graph500-omp from the GitHub repository. You also need to create a `bench_run.sh` file to tell `run_bench.sh` the name of your application (`BENCH_NAME`) and how to run it (`BENCH_RUN`). **Note**: you should adjust your benchmark size, so that it can fit in your slow memory. For example, in this tutorial, it is better to use 30GB as your benchmark footprint, considering kernel might use some memory in each 32GB memory node.
 4. run_all.sh will loop through `BENCHMARK_LIST` and run each of them for end-to-end performance evaluation.
    1. `SHRINK_PAGE_LISTS` means page migration policy will be used.
    2. `NR_RUNS` means how many times you want repeat the experiments.
