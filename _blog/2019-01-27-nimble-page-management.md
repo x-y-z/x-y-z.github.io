@@ -96,6 +96,10 @@ With these numbers, you should be able to get detail breakdown of Linux page mig
 
 To launch benchmarks for end-to-end results, you will need the scripts and the launcher from **end_to_end_launcher** folder. Also you need to enable cgroup v2 support by adding `systemd.unified_cgroup_hierarchy=1` to your kernel boot parameters. What I did is adding `systemd.unified_cgroup_hierarchy=1` to `GRUB_CMDLINE_LINUX` in `/etc/default/grub` file, like `GRUB_CMDLINE_LINUX="systemd.unified_cgroup_hierarchy=1"` and run `sudo update_grub2`.
 
+**Note**: You also need to disable Linux Auto NUMA balancing to avoid its interference either temporarily by executing `sudo sysctl kernel.numa_balancing=0` or permenantly by adding `kernel.numa_balancing=0` to `/etc/sysctl.conf`.[^1]
+
+[^1]: Jiaolin Luo's questions reminded me of this important setup. Thanks Jiaolin.
+
 In **end_to_end_launcher** folder, run `make` to create launcher binary from *launch.c* file.
 
 1. create_die_stack_mem.sh can help you create a cgroup limiting your fast memory size.
