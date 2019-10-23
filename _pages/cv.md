@@ -9,7 +9,7 @@ redirect_from:
 
 Research Interests
 =====
-My research interests lie at the hardware/software interface. I am interested in building programmable, high-performance, and energy-efficient systems for scale; i.e., cloud and datacenter environments. To that end, my prior research projects have focused on designing heterogeneous systems and developing operating system abstractions and mechanisms for seamless integration of accelerators (e.g. GPUs, FPGAs) in such systems. A key component of my work has been to modify the memory management core of the Linux kernel, where my code has been vetted by Linux developers and upstreamed into the mainline kernel releases since the 4.14 series.
+My research interests lie at the hardware/software interface. I am interested in building programmable, fast, and energy-efficient systems for scale; i.e., cloud and datacenter environments. To that end, my prior research projects have focused on designing heterogeneous systems and developing operating system abstractions and mechanisms for seamless integration of accelerators (e.g. GPUs, FPGAs) in such systems. A key component of my work has been to modify the memory management core of the Linux kernel, where my code has been vetted by Linux developers and upstreamed into the mainline kernel releases since the 4.14 series.
 
 Education
 ======
@@ -39,9 +39,9 @@ Work experience
 	in modern processors (e.g. AMD Ryzen) and minimize address translation overhead
 	for accelerators.
   * Upstreamed transparent hugepage migration support to Linux kernel v4.14 for
-	high performance heterogeneous memory management.
+	heterogeneous memory management.
   * Designed a low-overhead and efficient TLB coherence protocol (HATRIC) to
-	enable high performance data migration for heterogeneous memory management
+	enable fast data migration for heterogeneous memory management
 	in virtualized environment
 
 * *Research Intern*, **NVIDIA Research**, Austin, TX --- *Jan. 2017 - May 2017*
@@ -51,10 +51,10 @@ Work experience
 	address translation coverage.
 
 * *Research Intern*, **NVIDIA Research**, Austin, TX --- *May 2016 - Sep. 2016*
-  * Integrated transparent hugepage migration into Linux for high performance
-	CPU-GPU heterogeneous systems.
-  * Improved page migration throughput by more than 5x for high performance
-	heterogeneous memory management.
+  * Integrated transparent hugepage migration into Linux for CPU-GPU
+    heterogeneous systems.
+  * Improved page migration throughput by more than 5x for heterogeneous memory
+    management.
   * Kernel patches: [THP migration](https://lwn.net/Articles/723764/) & [Accelerating page migration](https://lkml.org/lkml/2016/11/22/457)
 
 * *Intern*, **VMware**, Palo Alto, CA --- *Jun. 2015 - Aug. 2015*
