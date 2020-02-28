@@ -7,7 +7,8 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am a software engineer at [NVIDIA Research](https://research.nvidia.com). I received my PhD in computer science from Rutgers University. My advisor is
+I am a software engineer at [NVIDIA Research](https://research.nvidia.com).
+I got my PhD in computer science from Rutgers University. My PhD advisor was
 [Abhishek Bhattacharjee](http://www.cs.yale.edu/homes/abhishek/). My Chinese
 name is <img src="images/yanzi.png" alt="晏子" style="width:60px;" /> .
 
