@@ -1,6 +1,5 @@
 ---
-title: "Tutorial: Translation Ranger: Operating System Support for
-Contiguity-Aware TLBs"
+title: "Tutorial: Translation Ranger: Operating System Support for Contiguity-Aware TLBs"
 collection: blog
 date: 2019-06-24
 
@@ -12,7 +11,7 @@ date: 2019-06-24
 
 
 
-##Kernel compilation
+## Kernel compilation
 
 Use `make menuconfig` and select `TRANSLATION_RANGER` option to make sure the kernel can be compiled correctly. (Use `/` to search for the option)
 
@@ -20,7 +19,7 @@ To get an initial kernel configuration file, you can copy a config file like `co
 
 To reduce kernel compilation time, you could run `make localmodconfig`, which only selects the modules currently loaded in your system.
 
-##Run your application with Translation Ranger
+## Run your application with Translation Ranger
 
 To launch benchmarks in Translation Ranger, you need the scripts and the launcher from the userspace GitHub repo. The application will always run on Node 1 in the system, which can be changed by assigning the NUMA node id to `FAST_NUMA_NODE` in run_bench.sh.
 
@@ -44,7 +43,7 @@ The scripts use different configuration names (the ones showing in `CONFIG_LIST`
 3. Enhanced khugepaged: `compact_freq` and `THP_SIZE_LIST` is "2mb".
 4. Translation Ranger: `no_compact_no_daemon_defrag` and `THP_SIZE_LIST` is "2mb".
 
-###Contiguity stats format
+### Contiguity stats format
 After running, a result folder will be created for each benchmark with a distinct configuration, like `result-<benchmark name>-<thread number>-cpu-<memory footprint size>-mem-defrag-scan-period-<the value of STATS_PERIOD>-defrag-period-<the value of DEFRAG_FRAQ_FACTOR*STATS_PERIOD>-<configuration>-<date and time of the run>`. In the folder, `<benchmark name>_mem_frag_contig_stats_0` stores the memory contiguity stats. It contains multiple memory scans, which are separated by `----`. Each scan contains contiguity stats for all VMAs in the application. Here is a sample for two VMAs:
 ```
 00000000a8b6e356, 0xffff9b36d7c7cb0b, 0x7f1325294000, 0x7f1325295000, 1, -1
