@@ -7,6 +7,7 @@ date: 2019-04-20
 
 - The kernel of "Nimble Page Management for Tiered Memory Systems" is [here](https://github.com/ysarch-lab/nimble_page_management_asplos_2019).
 - Its companion userspace applications and microbenchmarks can be find [here](https://github.com/ysarch-lab/nimble_page_management_userspace).
+- A newer kernel is available at [this branch](https://github.com/ysarch-lab/nimble_page_management_asplos_2019/tree/nimble_page_management_5_6_rc6), which is rebased on top of Linux v5.6\_rc6 but not tested yet. You need to **modify the [userspace launcher](https://github.com/ysarch-lab/nimble_page_management_userspace/blob/master/end_to_end_launcher/launcher.c) and [microbenchmarks](https://github.com/ysarch-lab/nimble_page_management_userspace/tree/master/microbenchmarks/exchange_page_migration)**, since the _exchange_pages_ and _mm_manage_ syscall numbers are changed to 439 (from 333) and 440 (from 334), respectively. For end-to-end launcher, you need to change the syscall number at [this line](https://github.com/ysarch-lab/nimble_page_management_userspace/blob/master/end_to_end_launcher/launcher.c#L75). For exchange page microbenchmark, you need to change the syscall number at [this line](https://github.com/ysarch-lab/nimble_page_management_userspace/blob/master/microbenchmarks/exchange_page_migration/non_thp_move_page_breakdown.c#L234) and [this line](https://github.com/ysarch-lab/nimble_page_management_userspace/blob/master/microbenchmarks/exchange_page_migration/move_page_breakdown.c#L237).
 
 ## Kernel compilation
 
