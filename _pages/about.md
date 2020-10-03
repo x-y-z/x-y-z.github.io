@@ -12,7 +12,7 @@ I got my PhD in computer science from Rutgers University. My PhD advisor was
 [Abhishek Bhattacharjee](http://www.cs.yale.edu/homes/abhishek/). My Chinese
 name is <img src="images/yanzi.png" alt="晏子" style="width:60px;" /> .
 
-# Research
+## Research
 
 My research interests focus on Computer Architecture and Operating Systems,
 especially on [Virtual Memory](https://en.wikipedia.org/wiki/Virtual_memory).
@@ -24,3 +24,17 @@ I design efficient [hardware](/publications/2017-06-24-ISCA-2017) and
 [software](https://lwn.net/Articles/728154/) to enable the full potential of
 new heterogeneous memory systems by accelerating data migration between
 different memory nodes in a system.
+
+## Recent Posts
+
+{% assign items = site.blog | reverse %}
+{% for post in items limit:3 %}
+  {% include about-single.html %}
+{% endfor %}
+
+## Recent Publications
+
+{% assign items = site.publications | reverse %}
+{% for post in items limit:3 %}
+  {% include about-single.html %}
+{% endfor %}
