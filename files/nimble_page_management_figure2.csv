@@ -1,0 +1,55 @@
+"","copy_method","page_size_factor","page_type","breakdown","time_us"
+"1","mt_1","4KB","Single Base Page","Syscall Enter",2.81008695652174
+"2","mt_1","2MB (512 4KB)","512 Base Pages (THP Equiv.)","Syscall Enter",3.62539130434783
+"3","mt_1","2MB","Split 1 THP Migration","Syscall Enter",2.89260869565217
+"4","mt_1","4KB","Single Base Page","Check Perm.",0.719217391304348
+"5","mt_1","2MB (512 4KB)","512 Base Pages (THP Equiv.)","Check Perm.",0.728608695652174
+"6","mt_1","2MB","Split 1 THP Migration","Check Perm.",0.889565217391304
+"7","mt_1","4KB","Single Base Page","Migration Prep.",72.7481739130435
+"8","mt_1","2MB (512 4KB)","512 Base Pages (THP Equiv.)","Migration Prep.",75.3517391304348
+"9","mt_1","2MB","Split 1 THP Migration","Migration Prep.",72.7734782608696
+"10","mt_1","4KB","Single Base Page","Form Page List",2.44121739130435
+"11","mt_1","2MB (512 4KB)","512 Base Pages (THP Equiv.)","Form Page List",226.887652173913
+"12","mt_1","2MB","Split 1 THP Migration","Form Page List",3.42021739130435
+"13","mt_1","4KB","Single Base Page","Prepare Proc.",0.306608695652174
+"14","mt_1","2MB (512 4KB)","512 Base Pages (THP Equiv.)","Prepare Proc.",14.8549565217391
+"15","mt_1","2MB","Split 1 THP Migration","Prepare Proc.",14.6798913043478
+"16","mt_1","4KB","Single Base Page","Get New Pages",0.831217391304348
+"17","mt_1","2MB (512 4KB)","512 Base Pages (THP Equiv.)","Get New Pages",189.665304347826
+"18","mt_1","2MB","Split 1 THP Migration","Get New Pages",183.967391304348
+"19","mt_1","4KB","Single Base Page","Split Huge Pages",0
+"20","mt_1","2MB (512 4KB)","512 Base Pages (THP Equiv.)","Split Huge Pages",0
+"21","mt_1","2MB","Split 1 THP Migration","Split Huge Pages",301.530543478261
+"22","mt_1","4KB","Single Base Page","Lock Pages",0.142782608695652
+"23","mt_1","2MB (512 4KB)","512 Base Pages (THP Equiv.)","Lock Pages",23.9025217391304
+"24","mt_1","2MB","Split 1 THP Migration","Lock Pages",23.4003260869565
+"25","mt_1","4KB","Single Base Page","Unmap Pages",4.5895652173913
+"26","mt_1","2MB (512 4KB)","512 Base Pages (THP Equiv.)","Unmap Pages",575.055130434783
+"27","mt_1","2MB","Split 1 THP Migration","Unmap Pages",552.918369565217
+"28","mt_1","4KB","Single Base Page","Alter Mappings",0.485217391304348
+"29","mt_1","2MB (512 4KB)","512 Base Pages (THP Equiv.)","Alter Mappings",26.0780869565217
+"30","mt_1","2MB","Split 1 THP Migration","Alter Mappings",26.280652173913
+"31","mt_1","4KB","Single Base Page","Copy Pages",2.75260869565217
+"32","mt_1","2MB (512 4KB)","512 Base Pages (THP Equiv.)","Copy Pages",984.556869565217
+"33","mt_1","2MB","Split 1 THP Migration","Copy Pages",971.5675
+"34","mt_1","4KB","Single Base Page","Remap Pages",1.56139130434783
+"35","mt_1","2MB (512 4KB)","512 Base Pages (THP Equiv.)","Remap Pages",172.459391304348
+"36","mt_1","2MB","Split 1 THP Migration","Remap Pages",170.4
+"37","mt_1","4KB","Single Base Page","Putback Old Pages",1.434
+"38","mt_1","2MB (512 4KB)","512 Base Pages (THP Equiv.)","Putback Old Pages",299.71852173913
+"39","mt_1","2MB","Split 1 THP Migration","Putback Old Pages",291.624347826087
+"40","mt_1","4KB","Single Base Page","Putback New Pages",0
+"41","mt_1","2MB (512 4KB)","512 Base Pages (THP Equiv.)","Putback New Pages",0
+"42","mt_1","2MB","Split 1 THP Migration","Putback New Pages",0
+"43","mt_1","4KB","Single Base Page","Migration Cleanup",0.103217391304348
+"44","mt_1","2MB (512 4KB)","512 Base Pages (THP Equiv.)","Migration Cleanup",0.22
+"45","mt_1","2MB","Split 1 THP Migration","Migration Cleanup",0.106521739130435
+"46","mt_1","4KB","Single Base Page","Store Return Vals",0.228173913043478
+"47","mt_1","2MB (512 4KB)","512 Base Pages (THP Equiv.)","Store Return Vals",8.94660869565217
+"48","mt_1","2MB","Split 1 THP Migration","Store Return Vals",0.49195652173913
+"49","mt_1","4KB","Single Base Page","Cleanup",0.157652173913043
+"50","mt_1","2MB (512 4KB)","512 Base Pages (THP Equiv.)","Cleanup",0.195391304347826
+"51","mt_1","2MB","Split 1 THP Migration","Cleanup",0.122282608695652
+"52","mt_1","4KB","Single Base Page","Syscall Exit",0.542260869565217
+"53","mt_1","2MB (512 4KB)","512 Base Pages (THP Equiv.)","Syscall Exit",0.840347826086956
+"54","mt_1","2MB","Split 1 THP Migration","Syscall Exit",1.54391304347826
