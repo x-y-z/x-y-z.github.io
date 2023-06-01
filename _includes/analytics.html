@@ -2,6 +2,8 @@
 
 {% for item in site.analytics.provider %}
   {% case item %}
+    {% when "google-gtag" %}
+      {% include /analytics-providers/google-gtag.html %}
     {% when "google" %}
       {% include /analytics-providers/google.html %}
     {% when "google-universal" %}
